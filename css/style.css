@@ -8,7 +8,7 @@ body {
   box-sizing: border-box; }
 
 header {
-  border-bottom: solid 1px #bf9fe383; }
+  background-color: #18141C; }
 
 .navbar-brand {
   font-family: 'Roboto Serif', serif;
@@ -108,6 +108,7 @@ header {
   transform: rotate(0deg); }
 
 .footer {
+  background-color: #18141C;
   height: 40px;
   width: 100%; }
 
@@ -170,18 +171,7 @@ header {
   align-items: center; }
 
 .myself {
-  width: 50vw;
-  max-width: 520px;
-  mix-blend-mode: luminosity;
-  position: absolute;
-  bottom: -100px; }
-
-.rectangle-bg {
-  width: 50vw;
-  max-width: 520px;
-  height: 30vmin;
-  background-color: #bf9fe3bf;
-  position: relative; }
+  max-width: 420px; }
 
 .container__main-layout {
   height: 93vh;
@@ -284,7 +274,7 @@ header {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  padding: 10rem 1rem 0; }
+  padding: 2rem 1rem 0; }
 
 .skill {
   display: flex;
@@ -308,8 +298,7 @@ header {
 
 @media (max-width: 545px) {
   .skills {
-    flex-direction: column;
-    padding: 1rem 1rem 0; }
+    flex-direction: column; }
   .skill {
     width: 100%;
     padding-bottom: 2rem; } }
@@ -367,3 +356,53 @@ form input[type="button"] {
     width: 90%; }
   .wrapper .box {
     padding: 20px 5px; } }
+
+.container__about-layout {
+  height: 93vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; }
+
+.header-about {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 1rem; }
+
+.container__about {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 5rem 2rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center; }
+
+.container__text-buttons {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 3rem 0; }
+  .container__text-buttons .about-button {
+    font-family: 'Roboto Serif', serif;
+    font-weight: 500;
+    color: #F4EFFA;
+    background: transparent;
+    border: 2px solid #F4EFFA;
+    border-radius: 20px;
+    padding: 0 20px; }
+
+.container__about-text {
+  max-width: 500px;
+  padding-left: 3rem; }
+  .container__about-text h2 {
+    padding-bottom: 2rem; }
+
+@media (max-width: 800px) {
+  .container__about {
+    flex-direction: column;
+    padding: 0; }
+  .container__about-text {
+    padding: 0; }
+  .myself2 {
+    width: 100vw;
+    max-width: 368px;
+    margin-bottom: 2rem; } }

@@ -1,0 +1,122 @@
+header {
+    border-bottom: solid 1px $darken-primary;
+}
+
+.navbar-brand {
+    font-family: 'Roboto Serif', serif;
+    font-weight: 800;
+    font-size: 32px;
+    color: $primary-color;
+}
+
+.navbar-brand:hover,
+.navbar-brand:active,
+.navbar-brand:focus {
+    color: $faded-primary;
+}
+
+.nav-link {
+    font-family: 'Roboto Serif', serif;
+    font-weight: 800;
+    font-size: 16px;
+    color: $primary-color;
+}
+
+.nav-link:hover,
+.nav-link:active,
+.nav-link:focus {
+    color: $faded-primary;
+}
+
+.nav-link {
+    position: relative;
+    display: inline-block;
+}
+
+.nav-link::after {
+    content: '';
+    opacity: 0;
+    transition: all .2s;
+    height: 2px;
+    width: 100%;
+    background-color: $darken-primary;
+    position: absolute;
+    bottom: 8px;
+    left: 0;
+}
+
+.nav-link:hover::after {
+    opacity: 1;
+}
+
+.navbar-toggler {
+    width: 20px;
+    height: 15px;
+    position: relative;
+    transition: .5s ease-in-out;
+}
+
+.navbar-toggler,
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus {
+    outline: none;
+    box-shadow: none;
+    border: 0;
+}
+
+.navbar-toggler span {
+    margin: 0;
+    padding: 0;
+}
+
+.toggler-icon {
+    display: block;
+    position: absolute;
+    height: 3px;
+    width: 100%;
+    background: $primary-color;
+    border-radius: 1px;
+    opacity: 1;
+    left: 0;
+    transform: rotate(0deg);
+    transition: .25s ease-in-out;
+}
+
+.middle-bar {
+    margin-top: 0px;
+}
+
+// clicked nav button
+
+.navbar-toggler .top-bar {
+    margin-top: 0px;
+    transform: rotate(135deg);
+}
+
+.navbar-toggler .middle-bar {
+    opacity: 0;
+    filter: alpha(opacity=0);
+}
+
+.navbar-toggler .bottom-bar {
+    margin-top: 0px;
+    transform: rotate(-135deg);
+}
+
+// collapsed nav button
+
+.navbar-toggler.collapsed .top-bar {
+    margin-top: -15px;
+    transform: rotate(0deg);
+}
+
+.navbar-toggler.collapsed .middle-bar {
+    opacity: 1;
+    filter: alpha(opacity=100);
+}
+
+.navbar-toggler.collapsed .bottom-bar {
+    margin-top: 15px;
+    transform: rotate(0deg);
+}
